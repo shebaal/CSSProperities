@@ -3,8 +3,8 @@
     <meta charset="UTF-8">
       <meta name="viewport" con="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
     <link rel="stylesheet" type="text/css" href="style.css" />
-
-    <title> Css Properties</title>
+<link rel="stylesheet" type="text/css" href="media-query.css" />
+    <title>   ES2H G4</title>
   </header>
 
 <body>
@@ -14,7 +14,7 @@
     <input type="checkbox" id="nav-check">
     <div class="nav-header">
       <div class="nav-title">
-      ES2H
+        ES2H
       </div>
     </div>
     <div class="nav-btn">
@@ -26,13 +26,30 @@
     </div>
 
     <div class="nav-links">
-      <a href="#screen" target="_blank">Screens</a>
-      <a href="#viewport" target="_self">viewport</a>
-      <a href="#Flex" target="_self">Flex Images &Videos</a>
-      <a href="Flexbox" target="_self">Flexbox</a>
-      <a href="Grid" target="_blank">Grid</a>
+      <div class="dropdown">
+<a href="index.html">  <button class="dropbtn">Responsive</button></a>
+  <div class="dropdown-content">
+    <a href="index.html">Screen & MediaQuery</a>
+    <a href="index.html">Viewport</a>
+    <a href="index.html">Flex Images &Videos</a>
+    <a href="index.html">Flexbox</a>
+      <a href="index.html">Grid</a>
+  </div>
+</div>
+<div class="dropdown">
+  <a href="csspro1.html">  <button class="dropbtn">Css-Properties</button></a>
+<a href="csspro1.html"> <div class="dropdown-content"></a>
+<a href="csspro1.html">Box-model</a>
+<a href="csspro1.html">display</a>
+<a href="csspro1.html">position</a>
+<a href="csspro1.html">z-index</a>
+
+</div>
+</div>
+
     </div>
   </div>
+  <!--enas-->
   <!-- end nav -->
   <!-- body -->
 
@@ -77,7 +94,192 @@
 
   <!-- section1 -->
 
+<section class="display2">
 
+  <h2> Display Properties</h2>
+  <h3>The display property specifies if/how an element is displayed.</h3>
+  <div class="display-content">
+  <p class="description2"><strong>display:none;</strong> This panel contains a  &lt;div&gt; element, which is hidden by default.</p>
+   </div>
+     <div class="display-content">
+  <p class="description2"><strong>display: block;</strong>It is used to displays an element as a block element.
+    <q>Note: block respect height,width,padding and margin and  add breakline </q></p>
+</div>
+  <div class="display-content">
+<p class="description2"><strong> display: inline;</strong>It is used to displays an element as an inline element.
+  <br>  <q>Note:inline don't respect height&width but respect padding and margin only (right&left) .don't add breakline. add element before & after it </q></p>
+</div>
+ <div class="display-content">
+<p class="description2"><strong>display: inline-block;</strong>An element you assign a display of inline-block is inline by presentation. But it has the added advantage of you being able to apply width and height to it,
+  which you can't do when the element is assigned a dispaly of inline.
+So, you can look at the inline-block display as an inline element and block element in one package.
+<br>
+<q>Note:inline-block respect height,width,padding and margin . add element before & after it</q></p>
+</div>
+ <div class="display-content">
+<p class="description2"><strong>display: flex;</strong>It is used to display an element as a block-level flex container.</p>
+</div>
+ <div class="display-content">
+<p class="description2"><strong>display:inline-flex;</strong>	It is used to display an element as an inline-level flex container.</p>
+</div>
+ <div class="display-content">
+<p class="description2"><strong>display:grid;</strong>	It is used to display an element as a block-level grid container.</p>
+</div>
+  <div class="display-content">
+<p class="description2"><strong>display:inline-grid;</strong>	It is used to display an element as an inline-level grid container.</p>
+</div>
+<div class="display-content">
+<p class="description2"><strong>display: list-item;</strong>	It is used to display all the elements in &lt;li&gt;element.</p>
+</div>
+<div class="display-content">
+<p class="description2"><strong>display: run-in;</strong>	It is used to display an element inline or block level, depending on the context.
+  <br><q>Note: go to<a href="www.caniuse.com"> www.caniuse.com</a></q></p>
+</div>
+<div class="display-content">
+<p class="description2"><strong>display:inherit;</strong>This makes the element inherit the display property of its parent. So, if you have a &lt;span&gt; tag inside a div and you give the span tag a display of inherit, it turns it from inline to block element</p>
+</div>
+<div class="display-content">
+<p class="description2"><strong>display:initial;</strong>This sets the display property of an element to its default value. So, if you set the display property of a span to initial, it remains inline, and if you set the same value for a div, it remains block.</p>
+</div>
+<div class="display-content">
+    <p class="description2"><strong>display: table-*;</strong> You'll rarely use a display value of table these days, but it's still important to know.
+ It was more useful in the past because you would use it for layouts before the advent of floats, Flex, and Grid.
+<q>Note*:table, table-cell, table-column, table-column-group,
+  table-footer-group, table-header-group, table-row, and table-row-group.</q></p>
+</div>
+</section>
+<section class"display2">
+    <h2>Examples</h2>
+  <div class="example">
+
+     <div class = "geeks">display:block; property</div>
+     <div class = "main">
+         <div id="main" style="display:block;"> BLOCK 1 </div>
+         <div id="main1" style="display:block;"> BLOCK 2</div>
+         <div id="main2" style="display:block;">BLOCK 3 </div>
+     </div>
+   </div>
+  <div class="example">
+
+     <div class = "geeks">display: Inline; property</div>
+     <div class = "main">
+         <div id="main" style="display: Inline;"> BLOCK 1 </div>
+         <div id="main1" style="display: Inline;"style="display: Inline-block;"> BLOCK 2</div>
+         <div id="main2" style="display: Inline;">BLOCK 3 </div>
+     </div>
+   </div>
+    <div class="example">
+
+       <div class = "geeks">display: Inline-block; property</div>
+       <div class = "main">
+           <div id="main" style="display: Inline-block;"> BLOCK 1 </div>
+           <div id="main1" style="display: Inline-block;"> BLOCK 2</div>
+           <div id="main2" style="display: Inline-block;">BLOCK 3 </div>
+       </div>
+     </div>
+
+  <div class="example">
+      <h3>inherit</h3>
+  <div class="inherit">
+    <p class="description2" >  Lorem ipsum dolor sit amet consectetur
+      <span>Inline element</span> adipisicing elit. Cumque cupiditate harum
+      consectetur a exercitationem laboriosam nobis eos pariatur expedita iure.</p>
+</div>
+</div>
+<div class="example">
+    <h3>initial</h3>
+<div class="initial">
+    <p class="description2" > Lorem ipsum dolor sit amet consectetur
+      <span>Inline element</span> adipisicing elit. Cumque cupiditate harum
+      consectetur a exercitationem laboriosam nobis eos pariatur expedita iure.</p>
+</div>
+</div>
+<div class="example">
+  <h3>table</h3>
+
+  <table>
+      <tr>
+        <td>Fruits</td>
+        <td>Lemurs</td>
+        <td>Pets</td>
+      </tr>
+      <tr>
+        <td>Cashew</td>
+        <td>Hua hua</td>
+        <td>Dog</td>
+      </tr>
+      <tr>
+        <td>Apple</td>
+        <td>Diadem Sifaka</td>
+        <td>Cat</td>
+      </tr>
+      <tr>
+        <td>Mango</td>
+        <td>Rig-tailed</td>
+        <td>Chicken</td>
+      </tr>
+</table>
+  <h3>display:table </h3>
+<div class="table">
+     <div class="row">
+       <div class="cell">Fruits</div>
+       <div class="cell">Lemurs</div>
+       <div class="cell">Pets</div>
+     </div>
+     <div class="row">
+       <div class="cell">Cashew</div>
+       <div class="cell">Hua hua</div>
+       <div class="cell">Dog</div>
+     </div>
+     <div class="row">
+       <div class="cell">Apple</div>
+       <div class="cell">Diadem Sifaka</div>
+       <div class="cell">Cat</div>
+     </div>
+     <div class="row">
+       <div class="cell">Mango</div>
+       <div class="cell">Ring-tailed</div>
+       <div class="cell">Chicken</div>
+     </div>
+</div>
+</div>
+</section>
+  <section class="display">
+<h3>Difference between display:none and visiblity: hidden</h3>
+<p class="description"><strong>visibility:hidden</strong> hides the element, but it still takes up space in the layout.</p>
+<p class="description"><strong>display:none</strong> removes the element from the document. It does not take up any space.</p>
+
+<div class="flex-container">
+<div class="imgbox" id="imgbox1">Box 1<br>
+  <img src="images/undraw_social_ideas_re_j5v4.svg" alt="Italy" style="width:100%">
+  <button onclick="removeElement()">Remove</button>
+</div>
+
+<div class="imgbox" id="imgbox2">Box 2<br>
+  <img src="images/undraw_web_browsing_p-77-h.svg" alt="Lights" style="width:100%">
+  <button onclick="changeVisibility()">Hide</button>
+</div>
+
+<div class="imgbox">Box 3<br>
+  <img src="images/undraw_web_search_re_efla.svg" alt="Forest" style="width:100%">
+  <button onclick="resetElement()">Reset All</button>
+</div>
+</div>
+<script>
+function removeElement() {
+  document.getElementById("imgbox1").style.display = "none";
+}
+
+function changeVisibility() {
+  document.getElementById("imgbox2").style.visibility = "hidden";
+}
+
+function resetElement() {
+  document.getElementById("imgbox1").style.display = "block";
+  document.getElementById("imgbox2").style.visibility = "visible";
+}
+</script>
+</section>
 
   <!-- End Section2 -->
 
