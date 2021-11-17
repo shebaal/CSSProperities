@@ -1,0 +1,629 @@
+* {
+  box-sizing: border-box;
+  font-family: cursive;
+  margin: 0px;
+  padding: 0px;
+}
+@font-face {
+  font-family: Scriptina;
+  src: url(SCRIPTIN.ttf);
+}
+
+/* nav */
+
+.nav {
+  height: 64px;
+  width: 100%;
+  background-color: #745dba;
+  position: fixed;
+  z-index: 2;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  padding: 0px 0px 0px 20px;
+  font-family: Scriptina;
+}
+.name {
+  font-size: 22px;
+  color: #fff;
+  font-family: cursive;
+  letter-spacing: 5px;
+}
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+  padding: 9px;
+  margin-right: 20px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #efefef;
+}
+
+.nav > .nav-links > a:hover {
+  background-color: #d1c9e8;
+  color: black;
+}
+
+.nav > #nav-check {
+  display: none;
+}
+/*  enas*/
+/* Style The Dropdown Button */
+.dropbtn {
+background-color: #745DBA;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #e8e4f4;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #a293d1;
+}
+
+
+/*enas*/
+.cover {
+  width: 100%;
+  height: 484px;
+  background-color: #745dba;
+}
+.cover-title {
+  text-align: center;
+  font-size: 42px;
+  color: #fff;
+
+  padding: 33px;
+  font-family: Scriptina;
+  font-weight: bold;
+}
+.card {
+  margin: 30px auto;
+  width: 300px;
+  height: 300px;
+  border: none;
+  border-radius: 40px;
+  /* box-shadow: 5px 5px 30px 7px rgb(0 0 0 / 25%), -5px -5px 30px 7px rgb(0 0 0 / 22%); */
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.card .card_image {
+  width: inherit;
+  height: inherit;
+  /* border-radius: 40px; */
+}
+
+.card .card_image img {
+  width: inherit;
+  height: inherit;
+  /* border-radius: 40px; */
+  object-fit: content;
+}
+
+.card3 .card_image2 {
+  width: 250px;
+  height: 250px;
+  /* border-radius: 40px; */
+}
+
+.card3 .card_image2 img {
+  width: inherit;
+  height: inherit;
+  /* border-radius: 40px; */
+  object-fit: content;
+}
+
+.card .card_title {
+  text-align: center;
+  border-radius: 0px 0px 40px 40px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: -80px;
+  height: 40px;
+}
+
+.card:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25),
+    -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
+}
+.card2 {
+  margin: 30px auto;
+  width: 300px;
+  height: 300px;
+  border: none;
+  border-radius: 40px;
+  /* box-shadow: 5px 5px 30px 7px rgb(0 0 0 / 25%), -5px -5px 30px 7px rgb(0 0 0 / 22%); */
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.card2 .card_image {
+  width: inherit;
+  height: inherit;
+  /* border-radius: 40px; */
+}
+
+.card2 .card_image img {
+  width: inherit;
+  height: inherit;
+  /* border-radius: 40px; */
+  object-fit: content;
+}
+
+.card2 .card_title {
+  text-align: center;
+  border-radius: 0px 0px 40px 40px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: -80px;
+  height: 40px;
+}
+.card3 {
+  margin: 50px;
+  width: 200px;
+  height: 200px;
+  border: none;
+}
+.card3 .card_title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  margin-right: -118px;
+  margin-top: -240px;
+  height: 40px;
+}
+
+.topic1 {
+  font-family: Scriptina;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: #745dba;
+  letter-spacing: 5px;
+}
+.para {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,
+  .nav #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #745dba;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 47px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+
+  .cover {
+    width: 100%;
+    height: 1200px;
+    background-color: #745dba;
+  }
+}
+/* end nav */
+
+/* body */
+.makeflex {
+  z-index: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.f1 {
+  flex: 1;
+}
+
+/* Enas */
+
+/*start clients*/
+
+@media (max-width:600px) {
+	.clients{
+
+	height: auto;
+	}
+	.clients-content{
+	font-size: 5px;
+
+	    display: flex;
+	    flex-direction: column;
+	   justify-content: space-evenly;
+	    align-items: center;
+	    align-content: space-between;
+			flex-wrap: nowrap;
+	  }
+.flip-card {
+	padding: 10px;
+	margin: 10px;
+}
+.flip-card-back {
+	height:auto;
+}
+}
+
+.clients{
+  background-color: #e8e4f4;
+height: 500px;
+}
+.clients-content{
+font-size: 5px;
+
+    display: flex;
+    flex-direction: row;
+   justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+  }
+.client{
+justify-content: center;
+text-align: center;
+padding: 10px;
+width: calc(70%/3);
+height: 500px;
+}
+.client-title {
+text-align: center;
+padding: 100px 0px 50px 0px;
+font-family: cursive;
+}
+
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #e8e4f4;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #baaedd;
+  color: black;
+}
+.flip-card-front  h5{
+font-family: cursive;
+	font-weight: bold;
+	font-size: 16px;
+	padding-bottom: 15px;
+}
+.flip-card-front img{
+margin-top: -10px;
+	width:250px;
+max-width: 100%;
+height:auto;
+}
+/* Style the back side */
+.flip-card-back {
+  background-color: #baaedd;
+  color: white;
+  transform: rotateY(180deg);
+}
+.flip-card-back p{
+padding: 10px;
+	font-size: 16px;
+	font-family: sans-serif;
+}
+/*end clients*/
+/*start gallary section*/
+.gallary{
+text-align: center;
+height: 200px;
+}
+.gallery .gallery-con
+{
+	display: flex;
+	align-content: stretch;
+	justify-content: flex-start;
+	align-items: stretch;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	margin-bottom: -4px;
+	margin-top: 100px;
+
+}
+
+.gallery .gallery-con .imo img{
+height: 310px;
+width: 100%;
+border: solid 1px #745DBA;
+}
+ .gallery .gallery-con .imor img{
+max-width: 100%;
+height: auto;
+border: solid 1px #745DBA;
+ }
+/*end gallary*/
+/*start flexbox*/
+.flexbox,.gallery h2 {
+ text-align: center;
+ font-size: 2rem;
+ padding: 40px 2rem;
+ color: #222;
+}
+
+.flexbox p {
+ font-size: 2rem;
+}
+.flex-container {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e8e4f4;
+    margin: 10px;
+}
+
+.flex-container>div {
+  background-color:  #745DBA;
+  color: white;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+/* Enas */
+.grid-explation {
+  display: flex;
+  flex-direction: column;
+
+  margin: 9rem 0;
+}
+
+.grid-example {
+  margin-bottom: 5rem;
+  color: #222;
+}
+.description {
+  width: 70%;
+  margin: 3rem auto;
+}
+.grid- {
+  margin: 0 15rem;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* grid-template-columns: minmax(600px, auto); */
+}
+
+.grid-border {
+  min-height: 18rem;
+  color: #f0f0f3;
+  border: 0.5rem solid #e8e4f4;
+  background-color: #fff;
+  margin: 2rem;
+}
+.grid-explation h2 {
+  text-align: center;
+  font-size: 3rem;
+  padding: 0 2rem;
+  color: #222;
+}
+
+.grid-explation p {
+  font-size: 2rem;
+}
+
+.grid {
+  display: grid;
+  min-width: 500px;
+  justify-content: center;
+}
+
+.grid-type {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  width: 600px;
+}
+
+.grid-type p {
+  padding: 0;
+  margin: 0;
+}
+
+.vp-item,
+.item,
+.item1 {
+  border: 1px solid #fff;
+  border-radius: 0.2rem;
+  min-height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #8b78c6;
+}
+
+.grid-row {
+  grid-template-rows: 50px 100px 80px;
+}
+
+.grid-column {
+  grid-template-columns: 90px 50px 120px;
+}
+.grid-column-default {
+  grid-template-columns: 1fr;
+}
+
+.grid-fr {
+  grid-template-columns: 3rem 25% 1fr 2fr;
+}
+
+.grid-repeat {
+  grid-template-rows: repeat(4, 100px);
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-repeat-column {
+  grid-template-columns: 30px repeat(3, 1fr) 30px;
+}
+
+.grid-gap2 {
+  grid-row-gap: 20px;
+  grid-column-gap: 5rem;
+}
+.grid-gap {
+  grid-gap: 100px 1em;
+}
+
+.item1 {
+  grid-column: 1 / 4;
+  grid-row: 2 / 4;
+}
+.advantage {
+  font-size: 2rem;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.advantage h2 {
+  color: #745dba;
+  text-align: center;
+}
+
+.advantage div {
+  background-color: #d1c9e8;
+  margin: 1rem;
+  padding: 1rem;
+  color: #222;
+}
+
+@media (max-width: 900px) {
+  .grid- {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    margin-bottom: 6rem;
+  }
+}
+/* end body */
+
+footer {
+  margin-top: 3rem;
+  height: 50px;
+  text-align: center;
+  background-color: #745dba;
+  color: white;
+  font-size: 2rem;
+}
