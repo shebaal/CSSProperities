@@ -1,29 +1,23 @@
 <html>
-  <header>
+  <heade>
     <meta charset="UTF-8">
       <meta name="viewport" con="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
     <link rel="stylesheet" type="text/css" href="style.css" />
 <link rel="stylesheet" type="text/css" href="media-query.css" />
     <title>   ES2H G4</title>
-  </header>
+  </heade>
 
 <body>
 
   <!-- nav -->
   <div class="nav">
-    <input type="checkbox" id="nav-check">
+
     <div class="nav-header">
       <div class="nav-title">
         ES2H
       </div>
     </div>
-    <div class="nav-btn">
-      <label for="nav-check">
-        <span></span>
-        <span></span>
-        <span></span>
-      </label>
-    </div>
+
 
     <div class="nav-links">
       <div class="dropdown">
@@ -37,7 +31,7 @@
   </div>
 </div>
 <div class="dropdown">
-  <a href="csspro1.html">  <button class="dropbtn">Css-Properties</button></a>
+    <a href="csspro1.html">  <button class="dropbtn">Css-Properties1</button></a>
 <a href="csspro1.html"> <div class="dropdown-content"></a>
   <a href="csspro1.html">Box-model</a>
   <a href="csspro1.html">display</a>
@@ -47,6 +41,25 @@
   
   
 
+</div>
+</div>
+<div class="dropdown">
+    <a href="csspro1.html">  <button class="dropbtn">Css-Properties2</button></a>
+<a href="csspro1.html"> <div class="dropdown-content"></a>
+<a href="csspro1.html">Html Layout/a>
+<a href="csspro1.html">Css Unit</a>
+<a href="csspro1.html">font</a>
+<a href="csspro1.html">Color</a>
+<a href="csspro1.html">Icons</a>
+</div>
+</div>
+<div class="dropdown">
+    <a href="csspro1.html">  <button class="dropbtn">Css-Properties3</button></a>
+<a href="csspro1.html"> <div class="dropdown-content"></a>
+<a href="csspro1.html">Box Shadow/a>
+<a href="csspro1.html">Border</a>
+<a href="csspro1.html">Image property</a>
+<a href="csspro1.html">justify-content</a>
 </div>
 </div>
 
@@ -97,13 +110,28 @@
 
   <!-- section1 -->
 
-<section class="display2">
+<section >
 
   <h2> Display Properties</h2>
   <h3>The display property specifies if/how an element is displayed.</h3>
-  <div class="display-content">
-  <p class="description2"><strong>display:none;</strong> This panel contains a  &lt;div&gt; element, which is hidden by default.</p>
-   </div>
+  <p class="description2">Examples of block-level elements:
+
+&lt;div&gt;
+&lt;h1&gt; - &lt;h6&gt;
+&lt;p&gt;
+&lt;form&gt;
+&lt;header&gt;
+&lt;footer&gt;
+&lt;section&gt;
+  </p>
+  <p class="description2">Examples of inline elements:
+ &lt;span&gt;
+ &lt;a&gt;
+ &lt;img&gt;
+</p>
+
+  <div class="display2">
+  
      <div class="display-content">
   <p class="description2"><strong>display: block;</strong>It is used to displays an element as a block element.
     <q>Note: block respect height,width,padding and margin and  add breakline </q></p>
@@ -119,6 +147,9 @@ So, you can look at the inline-block display as an inline element and block elem
 <br>
 <q>Note:inline-block respect height,width,padding and margin . add element before & after it</q></p>
 </div>
+    <div class="display-content">
+  <p class="description2"><strong>display:none;</strong> This panel contains a  &lt;div&gt; element, which is hidden by default.</p>
+   </div>
  <div class="display-content">
 <p class="description2"><strong>display: flex;</strong>It is used to display an element as a block-level flex container.</p>
 </div>
@@ -131,13 +162,7 @@ So, you can look at the inline-block display as an inline element and block elem
   <div class="display-content">
 <p class="description2"><strong>display:inline-grid;</strong>	It is used to display an element as an inline-level grid container.</p>
 </div>
-<div class="display-content">
-<p class="description2"><strong>display: list-item;</strong>	It is used to display all the elements in &lt;li&gt;element.</p>
-</div>
-<div class="display-content">
-<p class="description2"><strong>display: run-in;</strong>	It is used to display an element inline or block level, depending on the context.
-  <br><q>Note: go to<a href="www.caniuse.com"> www.caniuse.com</a></q></p>
-</div>
+
 <div class="display-content">
 <p class="description2"><strong>display:inherit;</strong>This makes the element inherit the display property of its parent. So, if you have a &lt;span&gt; tag inside a div and you give the span tag a display of inherit, it turns it from inline to block element</p>
 </div>
@@ -150,9 +175,24 @@ So, you can look at the inline-block display as an inline element and block elem
 <q>Note*:table, table-cell, table-column, table-column-group,
   table-footer-group, table-header-group, table-row, and table-row-group.</q></p>
 </div>
+<div class="display-content">
+<p class="description2"><strong>display: list-item;</strong>	It is used to display all the elements in &lt;li&gt;element.</p>
+</div>
+<div class="display-content">
+<p class="description2"><strong>display: run-in;</strong>	It is used to display an element inline or block level, depending on the context.If a run-in element precedes a block level element, 
+  the run in element will behave structurally as if it has become the block level elements first inline child element.
+</p>
+</div>
+<div class="display-content">
+<p class="description2"><strong>Notes :</strong><q>Note1: formore info go to<a href=" https://css-tricks.com/almanac/properties/d/display/" alt="Display Properties"> css-tricks.com</a></q>
+<br><q>Note2:to now about properties and if they supported and still used or not<a href="https://caniuse.com/" alt="caniuse website"> www.caniuse.com</a></q>
+</p>
+</div>
+</div>
 </section>
-<section class"display2">
+<section >
     <h2>Examples</h2>
+    <div class="display2">
   <div class="example">
 
      <div class = "geeks">display:block; property</div>
@@ -162,6 +202,7 @@ So, you can look at the inline-block display as an inline element and block elem
          <div id="main2" style="display:block;">BLOCK 3 </div>
      </div>
    </div>
+
   <div class="example">
 
      <div class = "geeks">display: Inline; property</div>
@@ -171,15 +212,7 @@ So, you can look at the inline-block display as an inline element and block elem
          <div id="main2" style="display: Inline;">BLOCK 3 </div>
      </div>
    </div>
-    <div class="example">
 
-       <div class = "geeks">display: Inline-block; property</div>
-       <div class = "main">
-           <div id="main" style="display: Inline-block;"> BLOCK 1 </div>
-           <div id="main1" style="display: Inline-block;"> BLOCK 2</div>
-           <div id="main2" style="display: Inline-block;">BLOCK 3 </div>
-       </div>
-     </div>
 
   <div class="example">
       <h3>inherit</h3>
@@ -197,6 +230,7 @@ So, you can look at the inline-block display as an inline element and block elem
       consectetur a exercitationem laboriosam nobis eos pariatur expedita iure.</p>
 </div>
 </div>
+
 <div class="example">
   <h3>table</h3>
 
@@ -222,6 +256,8 @@ So, you can look at the inline-block display as an inline element and block elem
         <td>Chicken</td>
       </tr>
 </table>
+</div>
+<div class="example">
   <h3>display:table </h3>
 <div class="table">
      <div class="row">
@@ -245,6 +281,16 @@ So, you can look at the inline-block display as an inline element and block elem
        <div class="cell">Chicken</div>
      </div>
 </div>
+</div>
+<div class="example">
+
+   <div class = "geeks">display: Inline-block; property</div>
+   <div class = "main">
+       <div id="main" style="display: Inline-block;"> BLOCK 1 </div>
+       <div id="main1" style="display: Inline-block;"> BLOCK 2</div>
+       <div id="main2" style="display: Inline-block;">BLOCK 3 </div>
+   </div>
+ </div>
 </div>
 </section>
   <section class="display">

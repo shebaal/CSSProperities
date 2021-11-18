@@ -3,12 +3,14 @@
   font-family: cursive;
   margin: 0px;
   padding: 0px;
+
 }
 @font-face {
   font-family: Scriptina;
   src: url(SCRIPTIN.ttf);
 }
-h3 ,h2{
+h3 ,h2
+{
   text-align: center;
 }
 /* nav */
@@ -62,9 +64,7 @@ h3 ,h2{
   color: black;
 }
 
-.nav > #nav-check {
-  display: none;
-}
+
 /*  enas*/
 /* Style The Dropdown Button */
 .dropbtn {
@@ -425,9 +425,12 @@ padding: 20px;
 height:auto;
 width: 100%;
 background-color: #e8e4f4;
+display: grid;
+grid-template-columns:repeat(2,2fr);
+margin-top: 30px;
 }
 .display-content{
-margin-top: -30px;
+
 background-color: #e8e4f4;
 padding-bottom: 10px;
 }
@@ -465,28 +468,28 @@ button {
 }
 #main{
                height: 100px;
-               width: 200px;
+               width: 100px;
                background:#d1c9e8;
 
 
            }
            #main1{
                height: 100px;
-               width: 200px;
+               width: 100px;
                background:#745dba;
 
 
            }
            #main2{
                height: 100px;
-               width: 200px;
+               width: 100px;
                background:#a293d1;
 
            }
 
            .geeks {
                font-size:25px;
-               margin-left:210px;
+
            }
            .main {
                margin:50px;
@@ -661,7 +664,7 @@ td {
 
 footer {
 
-  margin-top: 3rem;
+
   height: 50px;
   text-align: center;
   background-color: #745dba;
