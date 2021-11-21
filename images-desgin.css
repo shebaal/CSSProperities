@@ -1,0 +1,65 @@
+
+:root {
+    --text-color: rgba(255, 255, 255, 0.7);
+    --body-bg: hsl(233, 100%, 3%);
+    --card-bg: rgba(255, 255, 255, 0.2);
+    --media-md: 48rem;
+  }
+  
+  $media-md: 48rem;
+  
+  body {
+    line-height: 1.5;
+    color: var(--text-color);
+    background: var(--body-bg);
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--card-bg);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    max-width: 64rem;
+    
+    @media (min-width: $media-md){
+      flex-direction: row;
+    }
+    
+    p {
+      padding: 2rem;
+      margin: 0;
+      
+      @media (min-width: $media-md){
+        display: flex;
+        align-items: center;
+        height: 24rem;
+        font-size: 1.2rem;
+      }
+    }
+  }
+  
+  .image-wrapper {
+    position: relative;
+    height: 20rem;
+    
+    @media (min-width: $media-md){
+      flex: 1 0 61.8%;
+      height: auto;
+    }
+  
+    img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
