@@ -1,27 +1,36 @@
 <html>
-  <heade>
-    <meta charset="UTF-8">
-      <meta name="viewport" con="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-    <link rel="stylesheet" type="text/css" href="style.css" />
-<link rel="stylesheet" type="text/css" href="media-query.css" />
-    <title>   ES2H G4</title>
-  </heade>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" con="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" type="text/css" href="media-query.css" />
+  <title> ES2H G4</title>
+</head>
 
 <body>
-
+<header>
   <!-- nav -->
   <div class="nav">
-
+    <input type="checkbox" id="nav-check">
     <div class="nav-header">
       <div class="nav-title">
         ES2H
       </div>
     </div>
+    <div class="nav-btn">
+      <label for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+
 
 
     <div class="nav-links">
       <div class="dropdown">
-<a href="index.html">  <button class="dropbtn">Responsive</button></a>
+ <button class="dropbtn">Responsive</button>
   <div class="dropdown-content">
     <a href="index.html">Screen & MediaQuery</a>
     <a href="index.html">Viewport</a>
@@ -31,22 +40,22 @@
   </div>
 </div>
 <div class="dropdown">
-    <a href="csspro1.html">  <button class="dropbtn">Css-Properties1</button></a>
-<a href="csspro1.html"> <div class="dropdown-content"></a>
-  <a href="csspro1.html">Box-model</a>
+  <button class="dropbtn">Css-Properties1</button>
+<div class="dropdown-content">
+  <a href="boxSizeModel.html">Box-model</a>
   <a href="csspro1.html">display</a>
-  <a href="csspro1.html">position</a>
+  <a href="position.html">position</a>
   <a href="z-index.html">z-index</a>
   <a href="boxSizeModel.html">Box-Size</a>
-  
-  
+
+
 
 </div>
 </div>
 <div class="dropdown">
-    <a href="csspro1.html">  <button class="dropbtn">Css-Properties2</button></a>
-<a href="csspro1.html"> <div class="dropdown-content"></a>
-<a href="csspro1.html">Html Layout/a>
+  <button class="dropbtn">Css-Properties2</button>
+ <div class="dropdown-content">
+<a href="csspro1.html"> Html Layout </a>
 <a href="csspro1.html">Css Unit</a>
 <a href="csspro1.html">font</a>
 <a href="csspro1.html">Color</a>
@@ -54,9 +63,9 @@
 </div>
 </div>
 <div class="dropdown">
-    <a href="csspro1.html">  <button class="dropbtn">Css-Properties3</button></a>
-<a href="csspro1.html"> <div class="dropdown-content"></a>
-<a href="csspro1.html">Box Shadow/a>
+ <button class="dropbtn">Css-Properties3</button>
+<div class="dropdown-content">
+<a href="csspro1.html">Box Shadow</a>
 <a href="csspro1.html">Border</a>
 <a href="csspro1.html">Image property</a>
 <a href="csspro1.html">justify-content</a>
@@ -65,6 +74,7 @@
 
     </div>
   </div>
+</header>
   <!--enas-->
   <!-- end nav -->
   <!-- body -->
@@ -131,7 +141,7 @@
 </p>
 
   <div class="display2">
-  
+
      <div class="display-content">
   <p class="description2"><strong>display: block;</strong>It is used to displays an element as a block element.
     <q>Note: block respect height,width,padding and margin and  add breakline </q></p>
@@ -179,7 +189,7 @@ So, you can look at the inline-block display as an inline element and block elem
 <p class="description2"><strong>display: list-item;</strong>	It is used to display all the elements in &lt;li&gt;element.</p>
 </div>
 <div class="display-content">
-<p class="description2"><strong>display: run-in;</strong>	It is used to display an element inline or block level, depending on the context.If a run-in element precedes a block level element, 
+<p class="description2"><strong>display: run-in;</strong>	It is used to display an element inline or block level, depending on the context.If a run-in element precedes a block level element,
   the run in element will behave structurally as if it has become the block level elements first inline child element.
 </p>
 </div>
@@ -257,6 +267,7 @@ So, you can look at the inline-block display as an inline element and block elem
       </tr>
 </table>
 </div>
+
 <div class="example">
   <h3>display:table </h3>
 <div class="table">
@@ -300,18 +311,18 @@ So, you can look at the inline-block display as an inline element and block elem
 
 <div class="flex-container">
 <div class="imgbox" id="imgbox1">Box 1<br>
-  <img src="images/undraw_social_ideas_re_j5v4.svg" alt="Italy" style="width:100%">
-  <button onclick="removeElement()">Remove</button>
+  <img src="images/undraw_social_ideas_re_j5v4.svg" alt="Italy" >
+  <button class"but"  onclick="removeElement()">Remove</button>
 </div>
 
 <div class="imgbox" id="imgbox2">Box 2<br>
-  <img src="images/undraw_web_browsing_p-77-h.svg" alt="Lights" style="width:100%">
-  <button onclick="changeVisibility()">Hide</button>
+  <img src="images/undraw_web_browsing_p-77-h.svg" alt="Lights" >
+  <button class"but"  onclick="changeVisibility()">Hide</button>
 </div>
 
 <div class="imgbox">Box 3<br>
-  <img src="images/undraw_web_search_re_efla.svg" alt="Forest" style="width:100%">
-  <button onclick="resetElement()">Reset All</button>
+  <img src="images/undraw_web_search_re_efla.svg" alt="Forest" >
+  <button class"but"  onclick="resetElement()">Reset All</button>
 </div>
 </div>
 <script>

@@ -1,0 +1,228 @@
+<html>
+  <heade>
+    <meta charset="UTF-8">
+      <meta name="viewport" con="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+<link rel="stylesheet" type="text/css" href="media-query.css" />
+<link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+    <title>   ES2H G4</title>
+  </heade>
+
+<body>
+<header>
+  <!-- nav -->
+  <div class="nav">
+  <input type="checkbox" id="nav-check">
+    <div class="nav-header">
+      <div class="nav-title">
+        ES2H
+      </div>
+    </div>
+    <div class="nav-btn">
+      <label for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+
+    <div class="nav-links">
+      <div class="dropdown">
+  <button class="dropbtn">Responsive</button>
+  <div class="dropdown-content">
+    <a href="index.html">Screen & MediaQuery</a>
+    <a href="index.html">Viewport</a>
+    <a href="index.html">Flex Images &Videos</a>
+    <a href="index.html">Flexbox</a>
+      <a href="index.html">Grid</a>
+  </div>
+</div>
+<div class="dropdown">
+   <button class="dropbtn">Css-Properties1</button>
+<a href="csspro1.html"> <div class="dropdown-content"></a>
+<a href="csspro1.html">Box-model</a>
+<a href="csspro1.html">display</a>
+<a href="position.html">position</a>
+<a href="z-index.html">z-index</a>
+<a href="boxSizeModel.html">Box-Size</a>
+
+
+</div>
+</div>
+<div class="dropdown">
+      <button class="dropbtn">Css-Properties2</button>
+<a href="csspro1.html"> <div class="dropdown-content"></a>
+<a href="csspro1.html">Html Layout/a>
+<a href="csspro1.html">Css Unit</a>
+<a href="csspro1.html">font</a>
+<a href="csspro1.html">Color</a>
+<a href="csspro1.html">Icons</a>
+</div>
+</div>
+<div class="dropdown">
+     <button class="dropbtn">Css-Properties3</button>
+<div class="dropdown-content">
+<a href="csspro1.html">Box Shadow</a>
+<a href="csspro1.html">Border</a>
+<a href="csspro1.html">Image property</a>
+<a href="csspro1.html">justify-content</a>
+</div>
+</div>
+    </div>
+  </div>
+</header>
+    <!-- end nav -->
+    <!-- body -->
+
+    <div class="cover">
+      <div class="cover-title">Css Properties</div>
+
+      <div class="makeflex">
+        <div class="card3 1 position-1">
+          <div class="card_image2">
+            <img src="images/undraw_influencer_re_1fkb.svg" />
+
+          </div>
+          <div class="card_title title-white">
+            <div class="name">Sheba</div>
+          </div>
+        </div>
+
+        <div class="card3 1 position-2">
+          <div class="card_image2">
+            <img src="images/undraw_social_growth_re_tjy9.svg" />
+          </div>
+          <div class="card_title title-white">
+            <div class="name">Enas</div>
+          </div>
+        </div>
+
+        <div class="card3 1 position-3">
+          <div class="card_image2">
+            <img src="images/undraw_social_strategy_re_mk87.svg" />
+          </div>
+          <div class="card_title title-white">
+            <div class="name">Shatha</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="images/wave.svg" />
+
+    <!-- section1 -->
+    <section id="position" class="position">
+      <div class="position-title">Position</div>
+      <div class="static">
+        <h2>1 .Static</h2>
+        <p>
+          Position: static is the default value that an element will have. This
+          means if you don’t declare position for an element in CSS, it will
+          automatically be set to static.
+        </p>
+        <div class="box box-border">
+          <div class="first">First element</div>
+
+          <div class="second">Second element (I am static)</div>
+        </div>
+      </div>
+      <div class="relative">
+        <h2>2. Relative</h2>
+        <p>
+          Position: relative is similar to static in that relatively positioned
+          elements will follow the normal flow of the webpage. But the main
+          difference is that using relative will now unlock the other CSS layout
+          properties.
+        </p>
+        <div class="box box-border">
+          <div class="first">First element</div>
+
+          <div class="second">Second element (I am relative)</div>
+          <div class="third">Third element</div>
+        </div>
+      </div>
+      <div class="absolute">
+        <h2>3. Absolute</h2>
+        <p>
+          Position: absolute will cause an element to be taken out of that
+          normal flow of the webpage.
+        </p>
+        <div class="box box-border">
+          <div class="first">First element</div>
+
+          <div class="second">Second element (I am absolute)</div>
+          <div class="third">Third element</div>
+        </div>
+      </div>
+      <div class="fixed">
+        <h2>4. Fixed</h2>
+        <p>
+          Position: fixed will take the element out of the normal flow, and also
+          position it in the same place in the viewport (what’s visible on
+          screen). This means that scrolling will not affect its position at
+          all.
+        </p>
+        <div class="box box-border">
+          <div class="first">First element (I am fixed)</div>
+
+          <div class="second">Second element</div>
+        </div>
+      </div>
+      <div class="sticky">
+        <h2>5. Sticky</h2>
+        <p>
+          Position: sticky elements will initially behave like position:
+          relative elements, but if you keep scrolling, they will get taken out
+          of the normal flow and behave like position: fixed wherever you have
+          positioned them.
+        </p>
+        <div class="box box-border">
+          <div class="first">First element</div>
+
+          <div class="second">Second-element(I am sticky)</div>
+
+          <div class="third">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem
+            aut cumque in natus laudantium et porro minus, quidem assumenda
+            similique libero ipsa, atque maiores. Magni porro dolores, iusto
+            cupiditate consequuntur obcaecati animi nisi eligendi in, optio
+            beatae voluptatibus quam voluptate dignissimos veniam harum,
+            pariatur nemo. Earum nobis optio, iure in magni autem labore minus
+            repellendus adipisci minima fuga animi doloremque saepe sapiente,
+            assumenda excepturi! Similique sed perferendis magni, voluptatum
+            voluptatibus veritatis, obcaecati aliquid ab eveniet laudantium
+            excepturi nostrum, ipsam velit temporibus laboriosam itaque
+            recusandae amet! Neque repellendus id at corporis distinctio
+            pariatur est accusamus expedita atque culpa earum, quidem nostrum
+            officiis! Magnam ad, excepturi illum, iusto sed nihil dolore
+            explicabo nisi voluptatem aliquam assumenda alias architecto! Earum
+            quam debitis ipsa velit, commodi cupiditate ipsam id rem fugit
+            delectus laborum? Esse recusandae, cumque amet maxime assumenda
+            voluptatibus consequatur inventore quo. Doloribus quibusdam velit
+            qui, reiciendis asperiores a, libero iure ipsam tempore voluptate
+            voluptatibus culpa modi praesentium enim illo officiis quia
+            veritatis minus soluta natus nemo debitis. Optio, minima, laudantium
+            possimus ex pariatur voluptatibus perferendis cupiditate quam neque
+            quo molestiae inventore quos perspiciatis adipisci cumque, qui
+            impedit reiciendis ratione expedita. Consequuntur aliquam beatae
+            sequi consectetur officiis distinctio placeat nobis numquam, tempora
+            veniam.
+          </div>
+        </div>
+      </div>
+    </section>
+    <button id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+
+    <!-- End Section2 -->
+
+    <!-- End body -->
+
+    <!-- footer -->
+    <footer>All right reserved to ES2H</footer>
+
+    <!-- end footer -->
+  </body>
+</html>
